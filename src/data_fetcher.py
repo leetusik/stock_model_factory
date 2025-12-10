@@ -1,19 +1,19 @@
 import csv
+import json
 import os
 import time
-import json
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-import pandas as pd
 import OpenDartReader
+import pandas as pd
 from dotenv import load_dotenv
 from pykrx import stock
 
 # Define paths relative to project root
 CURRENT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = CURRENT_DIR.parent
-DATA_RAW_DIR = PROJECT_ROOT / "01_data_raw"
+DATA_RAW_DIR = PROJECT_ROOT / "01_data_raw_2"
 METADATA_FILE = DATA_RAW_DIR / "stock_metadata.csv"
 
 
