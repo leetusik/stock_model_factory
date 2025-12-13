@@ -23,7 +23,7 @@ def train():
     print(f"Using Device: {DEVICE}")
 
     # 1. Load Data
-    data_dir = Path("02_data_processed")
+    data_dir = Path("02_data_processed_2")
     full_dataset = VCPDataset(data_dir / "train_X.npy", data_dir / "train_y.npy")
 
     # 2. Split Train (80%) / Val (20%)
@@ -125,7 +125,7 @@ def train():
         if avg_val_loss < best_val_loss:
             best_val_loss = avg_val_loss
             Path("models").mkdir(exist_ok=True)
-            torch.save(model.state_dict(), "models/vcp_cnn_best.pth")
+            torch.save(model.state_dict(), "models/vcp_cnn_best_1.pth")
             print("  >>> Model Saved!")
 
 

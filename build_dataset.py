@@ -56,8 +56,8 @@ def clean_column_names(df):
 
 def main():
     # 1. Setup Directories
-    RAW_DIR = Path("01_data_raw")
-    PROCESSED_DIR = Path("02_data_processed")
+    RAW_DIR = Path("01_data_raw_2")
+    PROCESSED_DIR = Path("02_data_processed_2")
     PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 
     csv_files = list(RAW_DIR.glob("*.csv"))
